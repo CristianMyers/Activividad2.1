@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- ImageView para mostrar la foto -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:contentDescription="Vista previa de la foto"
+        android:src="@drawable/anuel"
+        android:layout_gravity="center"/>
+
+    <!-- Texto que dice "Nombre de la foto" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre foto:"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <!-- EditText para ingresar el nombre de la foto -->
+    <EditText
+        android:id="@+id/et_nombre_foto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa nombre de la foto"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Botón para aceptar -->
+    <Button
+        android:id="@+id/btn_aceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACEPTAR"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+</LinearLayout>
